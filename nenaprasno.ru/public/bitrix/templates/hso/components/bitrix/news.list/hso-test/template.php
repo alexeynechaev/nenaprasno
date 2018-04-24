@@ -22,7 +22,7 @@
         <? foreach ($variants as $j => $variant): ?>
             <div class="question-form-checkbox question-form-checkbox-variants">
                 <input 
-                    <? if (!is_null($answers) && isset($answers[$j])): ?>
+                    <? if (!is_null($answers) && in_array($j, $answers)): ?>
                         checked
                     <? endif ?>
                     name="answers[<?=$item['ID']?>][]" 
