@@ -37,6 +37,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                         <a href="/registration/">Регистрация</a> /
                         <a href="/login/">Вход</a>
                     <? else: ?>
+                        <a href="/test/">Тестирование</a> /
                         <a href="/?logout=yes">Выход</a>
                     <? endif ?>
                 </div>
