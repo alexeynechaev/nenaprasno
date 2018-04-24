@@ -94,9 +94,7 @@ $APPLICATION->SetTitle("Главная");
                 <div class="test-welcome-title">Статус вашей заявки</div>
 
                 <? if ($accepted === true): ?>
-                    <div class="test-welcome-text active">
-                        <center>Ваша заявка принята. Пожалуйста, дождитесь начала 2 тура.</center>
-                    </div>
+                    <? LocalRedirect('/test/'); ?>
                 <? else: ?>
                     <div class="test-welcome-text active">
                         <center>Заявка находится на рассмотрении</center>

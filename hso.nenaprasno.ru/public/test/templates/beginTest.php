@@ -46,14 +46,10 @@
                 7. Помните, что у Вас есть всего одна попытка ответа на вопросы второго тура. Тщательно выберете время и место для комфортного решения заданий. Также позаботьтесь о том, чтобы не было проблем с интернет-связью.
 
             </p>
-            <p style="font-size: 18px;">Второй тур закрыт, по вопросам обращайтесь в нашу группу 
-                <a target="_blank" href="https://vk.com/hso_community">vk.com/hso_community</a>
-            </p>
-<!--
+
             <div class="test-welcome-button">
-                <a href="/test/?begin">Начать тест</a>
+                <a class="button button-orange button-round" href="/test/?begin">Начать тест</a>
             </div>
-        -->
         </center>
     </div>
 </div>
