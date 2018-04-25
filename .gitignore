@@ -8,3 +8,4 @@ mysql-password.txt
 **/.access.php
 **/.DS_Store
 **/*.log
+**/*.htaccess

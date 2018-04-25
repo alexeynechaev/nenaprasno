@@ -36,6 +36,8 @@ var jsFiles = [
         './node_modules/flatpickr/dist/flatpickr.js',
         './node_modules/flatpickr/dist/l10n/ru.js',
         './node_modules/tippy.js/dist/tippy.js',
+        './node_modules/spin.js/spin.js',
+        './node_modules/spin.js/jquery.spin.js',
         './js/components/**/*.js',
         './js/scripts.js'
     ],

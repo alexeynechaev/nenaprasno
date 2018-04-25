@@ -1,7 +1,7 @@
 <?
 require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php');
 
-if (($_REQUEST['email']) && ($_REQUEST['name'])){
+if (($_REQUEST['email']) && ($_REQUEST['name']) && checkReCaptcha($_REQUEST['captcha-token'])){
   CModule::IncludeModule('iblock');
 
   $el = new CIBlockElement;

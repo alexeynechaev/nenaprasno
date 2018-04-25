@@ -38,6 +38,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         <? endif ?>
     </footer>
 
+    <div id="recaptcha-placeholder"></div>
+
     <script src="/assets/build/scripts.js"></script>
     <? if (CSite::InDir('/screen/')): ?>
         <script src="/assets/screen/build/app.js"></script>
@@ -46,6 +48,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     <? else: ?>
         <script async src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
     <? endif ?>
+
+    <script src='https://www.google.com/recaptcha/api.js?onload=gCapthaInit&render=explicit'></script>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">

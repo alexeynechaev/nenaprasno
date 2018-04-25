@@ -32,8 +32,9 @@ $APPLICATION->SetTitle('Главная');
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <form action="/ajax/feedback/" method="post" class="contacts-feedback">
+                    <form action="/ajax/feedback/" method="post" class="contacts-feedback" data-captcha="<?=CAPTCHA_CODE?>">
                         <input type="hidden" value="contacts" name="type">
+                        <input type="hidden" name="captcha-token" value="">
                         <div class="contacts-feedback-title">
                             Обратная связь
                         </div>

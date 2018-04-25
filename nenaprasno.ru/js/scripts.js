@@ -5,3 +5,7 @@ $(document).ready(function () {
         theme: 'light'
     });
 });
+
+var gCapthaInit = function() {
+    
+}
