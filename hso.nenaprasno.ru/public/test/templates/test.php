@@ -15,27 +15,28 @@
 </div>
 
 <div class="question-form">
-
-  <div class="question-form-timer" :class="formActive ? 'active' : 'inactive'">
-      <div class="question-form-timer-icon" :class="timer > 0 ? 'is-rotating' : ''">
-          <?php include $_SERVER['DOCUMENT_ROOT'] . '/assetsimages/sand-clock.svg'; ?>
-      </div>
-      <div v-if="timer > 0">
-          Осталось
-          <div class="question-form-timer-val">
-              <span v-if="timer > 40">
-                  {{ Math.floor(timer/60) }} мин.
-              </span>
-              <span v-else>
-                  {{ timer }} сек.
-              </span>
+  <div class="question-form-timer-wrapper">
+      <div class="question-form-timer" :class="formActive ? 'active' : 'inactive'">
+          <div class="question-form-timer-icon" :class="timer > 0 ? 'is-rotating' : ''">
+              <?php include $_SERVER['DOCUMENT_ROOT'] . '/images/sand-clock.svg'; ?>
           </div>
-      </div>
-      <div v-else>
-          <div class="question-form-timer-val">
-              <small>
-                  время вышло
-              </small>
+          <div v-if="timer > 0">
+              Осталось
+              <div class="question-form-timer-val">
+                  <span v-if="timer > 40">
+                      {{ Math.floor(timer/60) }} мин.
+                  </span>
+                  <span v-else>
+                      {{ timer }} сек.
+                  </span>
+              </div>
+          </div>
+          <div v-else>
+              <div class="question-form-timer-val">
+                  <small>
+                      время вышло
+                  </small>
+              </div>
           </div>
       </div>
   </div>
