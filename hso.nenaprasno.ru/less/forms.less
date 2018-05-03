@@ -381,12 +381,18 @@
   padding: 0 10px;
 }
 
-.question-form-timer {
-  display: none;
+.question-form-timer-wrapper {
   position: absolute;
   z-index: 100;
   top: 15px;
   right: -200px;
+  height: 100%;
+}
+
+.question-form-timer {
+  display: none;
+  position: sticky;
+  top: 15px;
   width: 150px;
   padding: 30px 25px;
   border: 2px solid #cecece;
