@@ -4,8 +4,13 @@ if ($arResult['PROPERTIES']['DONATIONS']['VALUE']){
     'project-preview-donation-bar-green',
     'project-preview-donation-bar-lily',
     'project-preview-donation-bar-red',
-    'project-preview-donation-bar-yellow',
+    'project-preview-donation-bar-bottle-green',
     'project-preview-donation-bar-blue',
+    'project-preview-donation-bar-dark-magenta',
+    'project-preview-donation-bar-chocolate',
+    'project-preview-donation-bar-dark-purple',
+    'project-preview-donation-bar-yellow',
+    'project-preview-donation-bar-midnight-blue',
   ];
 
   $total = $arResult['PROPERTIES']['GOAL']['VALUE'];
