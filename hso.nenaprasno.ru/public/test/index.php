@@ -8,7 +8,34 @@ $APPLICATION->SetTitle("Главная");
         <? if (! $USER->IsAuthorized()): ?>
             <? include(__DIR__ . '/templates/login.php'); ?>
         <? else: ?>
-            <? include(__DIR__ . '/templates/testClosed.php'); ?>
+        	<? if (array_key_exists('start', $_REQUEST)): ?>
+        		<? include(__DIR__ . '/templates/beginTest.php'); ?>
+        		<? die; ?>
+        	<? endif ?>
+        	<? $userData = getTestInfo($USER->GetID()); ?> 
+            <? if ($userData['accepted']): ?> 
+                <? 
+                    $testInfo = getTest($userData); 
+                    if (($testInfo == null) && array_key_exists('begin', $_REQUEST)){ 
+                        $testInfo = beginTest($userData); 
+                    } 
+                ?> 
+ 
+                <? if ($testInfo['begin']): ?> 
+                    <? if (checkTestTime($testInfo)): ?> 
+                        <? include(__DIR__ . '/templates/test.php'); ?> 
+                    <? else: ?> 
+                        <? include(__DIR__ . '/templates/testTimeIsOver.php'); ?> 
+                    <? endif ?> 
+ 
+                <? else: ?> 
+                    <? include(__DIR__ . '/templates/testClosed.php'); ?>
+                <? endif ?> 
+                 
+            <? else: ?> 
+            	<? include(__DIR__ . '/templates/testClosed.php'); ?>
+            <? endif ?> 
+            
         <? endif ?>
     </div>
 </main>
