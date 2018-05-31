@@ -250,7 +250,8 @@
                     </div>
                     <div class="donate-block-form-footer">
                         <div class="donate-block-form-padding">
-                            Пожертвование осуществляется на условиях <a href="/upload/Oferta.pdf" target="_blank">Публичной оферты</a>
+                            Пожертвование осуществляется на условиях <a href="/upload/Oferta.pdf" target="_blank">Публичной оферты</a><br/>
+                            Регулярное пожертвование можно отменить в любой момент, перейдя по <a href="https://my.cloudpayments.ru/ru/Unsubscribe" target="_blank">ссылке</a>.
                         </div>
                     </div>
                 </form>
