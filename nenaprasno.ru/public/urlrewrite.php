@@ -1,6 +1,18 @@
 <?
 $arUrlRewrite = array(
   array(
+    "CONDITION" => "#^/project/vsho/students/(.*)/.*#",
+    "RULE" => "id=\$1",
+    "ID" => "",
+    "PATH" => "/projects/student.php",
+  ),
+  array(
+    "CONDITION" => "#^/projects/vsho/students/.*#",
+    "RULE" => "code=\$1",
+    "ID" => "",
+    "PATH" => "/projects/students.php",
+  ),
+  array(
     "CONDITION" => "#^/projects/(.*)/.*#",
     "RULE" => "code=\$1",
     "ID" => "",
@@ -17,19 +29,7 @@ $arUrlRewrite = array(
 		"RULE" => "section=\$1",
 		"ID" => "",
 		"PATH" => "/publications/section.php",
-	),/*
-  array(
-    "CONDITION" => "#^/fund/news/(.*)/.*#",
-    "RULE" => "code=\$1",
-    "ID" => "",
-    "PATH" => "/fund/news/detail.php",
-  ),    
-  array(
-    "CONDITION" => "#^/fund/events/(.*)/.*#",
-    "RULE" => "code=\$1",
-    "ID" => "",
-    "PATH" => "/fund/events/detail.php",
-  ),*/
+	),
   array(
     "CONDITION" => "#^/fund/news/(.*)/.*#",
     "RULE" => "code=\$1",

@@ -16,11 +16,17 @@
                 <div class="project-preview-content-goal-title">Цель проекта</div>
                 <?=$arResult['PROPERTIES']['TARGET']['~VALUE']['TEXT']?>
             </div>
-			<?if($arResult['PROPERTIES']['CANDONATE']['VALUE']=='Y'):?>
-				<div class="project-preview-content-button m-b-lg">
-					<a href="#donate" class="button button-blue button-round">Помочь проекту</a>
-				</div>
-			<?endif;?>
+
+      			<?if ($arResult['PROPERTIES']['CANDONATE']['VALUE'] == 'Y' or $arResult['CODE'] == 'vsho'):?>
+      				<div class="project-preview-content-button m-b-lg">
+                <? if ($arResult['PROPERTIES']['CANDONATE']['VALUE'] == 'Y'): ?>
+                  <a href="#donate" class="button button-blue button-round">Помочь проекту</a>
+                <? endif ?>
+                <? if ($arResult['CODE'] == 'vsho'): ?>
+                  <a href="/projects/vsho/students/" class="button button-round">Список студентов</a>
+                <? endif ?>
+      				</div>
+      			<?endif;?>
 
             <div class="project-preview-content-links">
                 <div class="project-preview-share">
